@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>云玩家 - Yunist</title><meta name="author" content="云玩家"><meta name="copyright" content="云玩家"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="云玩家&#39;s blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="云玩家">
+<meta property="og:url" content="http://yunist.cn/page/7/index.html">
+<meta property="og:site_name" content="云玩家">
+<meta property="og:description" content="云玩家&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="云玩家">
+<meta property="article:tag" content="机器学习,网站搭建,数学,白嫖">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yunist.cn/page/7/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '云玩家',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-12-25 20:14:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">27</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">云玩家</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">云玩家</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/ML/RL/primer/basic_concepts/" title="RL 基本概念"><img class="post_bg" src="/ML/RL/primer/basic_concepts/basic_concepts.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RL 基本概念"></a></div><div class="recent-post-info"><a class="article-title" href="/ML/RL/primer/basic_concepts/" title="RL 基本概念">RL 基本概念</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-05-03T09:11:39.000Z" title="发表于 2020-05-03 17:11:39">2020-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/%E5%85%A5%E9%97%A8/">入门</a></span></div><div class="content">两种回报函数在强化学习中, 有两种常用的回报函数, 即有限无折损回报 ($\textrm{finite-horizon undiscount return}$) , 它将有限时间内每个时刻的奖赏加起来作为总回报:
+
+R(\tau)=\sum_{t = 0}^Tr_t与无限有折损回报 ($\textrm{infinite-horizon discount return}$) , 将往后至无穷的时间内每个时刻的奖赏加权后求和作为总回报.
+
+R(\tau) = \sum_{t = 0}^\infty\gamma^tr_t其中 $\gamma\in(0,1)$ , 是一个参数.
+有限无折损回报很容易理解, 那么为什么会有无限有折损回报这种形式呢? 这有着直觉和数学上的双重意义.
+
+直觉上, 我们会将眼前利益看得更重要, 而未来的利益则显得没那么重要 ($\textrm{Cash now is better than cash later}$) .
+数学上, 无限无折损回报会无法收敛到一个有限的值, 而乘上 $\gamma^t$ 这个折扣因子 ($\textrm{discount factor} ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/hexo/jsdelivr_js/" title="仅引入 JS 实现博客 CDN 加速"><img class="post_bg" src="/hexo/jsdelivr_js/jsdelivr_js.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="仅引入 JS 实现博客 CDN 加速"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo/jsdelivr_js/" title="仅引入 JS 实现博客 CDN 加速">仅引入 JS 实现博客 CDN 加速</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-28T14:12:32.000Z" title="发表于 2020-04-28 22:12:32">2020-04-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span></div><div class="content">前提博客 cdn 加速网上有很多的教程, 其中免备案, 最好用的就是 Jsdelivr 了, 我也写过一篇用 Jsdelivr 加速的文章, 但是似乎很多人一开始都看不懂如何用 Jsdelivr 加速… 这篇文章的原理也是基于 Jsdelivr 加速博文图片, 但是保留了原来的相对路径. 并且能够仅引入一个 JS 实现 Jsdelivr 加速 . 
+
+本文的方法只能实现博文内图片加速, 其余页面的图片无法加速 (为了避免与友链图片等冲突, 并且像文章封面这种图片难以只用 JS 实现替换为 Jsdelivr 链接) .
+
+本文能够成功的前提是图片在原文中用相对路径引用, 同时博客部署在 Github 上.
+
+本文的方法可能和懒加载有冲突, 因此建议关闭懒加载 (实际上使用了 Jsdelivr 后加载是飞速的, 根本不需要懒加载) .
+除 Butterfly 主题外, 其他主题的 JS 代码并没有经过严格的测试, 因此可能出现 Bug , 请及时留言.
+由于主题版本的原因, JS 代码可能会出错或者失效, 请及时留言.
+
+JS 代码为了方便小白, 这里把部分主题 JS 代码写法都写出来了  ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/ML/RL/primer/RL_demo/" title="强化学习入门 Demo"><img class="post_bg" src="/ML/RL/primer/RL_demo/RL_demo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="强化学习入门 Demo"></a></div><div class="recent-post-info"><a class="article-title" href="/ML/RL/primer/RL_demo/" title="强化学习入门 Demo">强化学习入门 Demo</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-27T13:15:24.000Z" title="发表于 2020-04-27 21:15:24">2020-04-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/%E5%85%A5%E9%97%A8/">入门</a></span></div><div class="content">Q Learning12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091import numpy as npimport pandas as pdimport timeimport IPythonlength = 4  # 道路长度epsilon = 0.9  # 贪心值a = [0, 1]  # 动作Q_a = np.zeros([length + 1, len(a)])  # Q-a表alpha = 0.1gamma = 0.9game_over = False  # 一轮游戏是否结束def print_environment(state):    &quot;&quot;&quot;打印环境&quot;&quot;&quot;    str = &#x27;-&#x27; * state   ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/ML/watermelon_book/read/16/" title="读懂西瓜书 16 : 强化学习"><img class="post_bg" src="/ML/watermelon_book/read/16/16.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="读懂西瓜书 16 : 强化学习"></a></div><div class="recent-post-info"><a class="article-title" href="/ML/watermelon_book/read/16/" title="读懂西瓜书 16 : 强化学习">读懂西瓜书 16 : 强化学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-25T09:06:40.000Z" title="发表于 2020-04-25 17:06:40">2020-04-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E8%A5%BF%E7%93%9C%E4%B9%A6/">西瓜书</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/%E5%85%A5%E9%97%A8/">入门</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E8%A5%BF%E7%93%9C%E4%B9%A6/%E8%AF%BB%E6%87%82%E8%A5%BF%E7%93%9C%E4%B9%A6/">读懂西瓜书</a></span></div><div class="content">K-摇臂赌博机探索与利用探索与利用总是矛盾的, 要使奖赏最大, 就要在探索与利用之间做好权衡.
+ϵ-贪心以 $\epsilon$ 的概率进行探索, 以 $1-\epsilon$ 的概率进行利用.
+增量式计算令 $Q(k)$ 记录摇臂 $k$ 的平均奖赏. 若摇臂 $k$ 被尝试了 $n$ 次, 得到的奖赏是 $v_1,v_2,\dots,v_n$ , 则平均奖赏为
+
+Q(k)=\frac{1}{n}\sum_{i=1}^nv_i由于如果这样计算的话, 需要记录 $n$ 个奖赏值, 算法效率也不高 ( $\mathcal O(n)$ ) , 所以采用增量式计算.
+
+\begin{aligned}
+Q_n(k)&=\frac{1}{n}\big((n-1)\times Q_{n-1}(k)+v_n\big)\\\\
+&=Q_{n-1}(k)+\frac{1}{n}\big(v_n-Q_{n-1}(k)\big)
+\end{aligned}这样就只需要记录两个值: 已尝试次数 $n-1$ 以及最近平均奖赏 $Q_{n-1}(k)$ . 算法复杂度也下降到 $\mathcal O(1)$ .
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/scribble/obsessive_LaTeX/" title="强迫症的 LaTeX"><img class="post_bg" src="/scribble/obsessive_LaTeX/obsessive_LaTeX.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="强迫症的 LaTeX"></a></div><div class="recent-post-info"><a class="article-title" href="/scribble/obsessive_LaTeX/" title="强迫症的 LaTeX">强迫症的 LaTeX</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-23T10:44:00.000Z" title="发表于 2020-04-23 18:44:00">2020-04-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E6%96%87/">杂文</a></span></div><div class="content">这篇博文写了一些关于数学公式的规范. 为啥写这个呢, 因为规范了自己数学公式的写法, 才能更有效率的写数学公式. 当然这篇博文不会把所有标准都列出来, 只是强调一些比较小的点. 当然这里所说全部都是 $\mathrm{Markdwon}$ 中的 $\LaTeX$ 公式, 也可以说成是 $\mathrm{MathJax}$ , 所以请大佬们轻喷.
+积分正确的积分写法应该是
+1\int f(x)\,\mathrm&#123;d&#125;x
+
+\int f(x)\,\mathrm{d}x即 $\mathrm{d}x$ 与被积函数之间要有一个小小的间隔 \, , 并且 $\mathrm{d}$ 要用正体.
+cdots 还是 ldots ?正确的用法是
+11+2+3+\cdots+n
+
+1+2+3+\cdots+n11,2,3,\ldots,n
+
+1,2,3,\ldots,n即省略号要和它们两边的符号等高. 不过还有一个方便的命令, 即 \dots , 它可以判断应该用哪个省略号.
+121+2+3+\dots+n\\\\1,2,3,\dots,n
+
+1+2+3+\dots+n\\\\
+1,2, ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/ML/model/LDA/" title="LDA 详解"><img class="post_bg" src="/ML/model/LDA/LDA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LDA 详解"></a></div><div class="recent-post-info"><a class="article-title" href="/ML/model/LDA/" title="LDA 详解">LDA 详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-23T10:31:09.000Z" title="发表于 2020-04-23 18:31:09">2020-04-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A8%A1%E5%9E%8B/">模型</a></span></div><div class="content">先验知识Gamma 函数
+Gamma 函数详解
+
+Beta/Dirichlet 分布与共轭
+Beta 函数, Beta 分布详解
+
+MCMC, 吉布斯采样这块资料暂时自己去找, 等我有空写了 $\textrm{MCMC}$ 的教程再补上.
+LDA 介绍构成&nbsp;$\textrm{LDA (Latent Dirichlet Allocation)}$ 是一种词袋模型. 由语料, 文档, 话题. 词, 这三个概念组成.
+
+语料
+语料是文档的集合.
+
+文档
+文档是词的集合, 可以看做是一篇作文, 或是像这篇一样的博文, 反正就是一篇完整的文本.
+
+话题
+话题给出了某个词出现的概率. 到底是啥呢? $\textrm{LDA}$ 认为, 文档中每个词都应该有它的话题, 词是由话题来生成的. 比如说某个词的话题是 “概率论” , 那么这个词就很有可能是 “$\textrm{Gamma}$ 函数” , 而不太可能是 “吃饭” . “可能” 与 “不太可能” 在数学上用概率描述, 而话题就给出了这个概率的值. 
+
+词
+
+这应该无需多解释, “词” 本身就是一个词. 文档是由一个个词组成的
+
+生成 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/hexo/valine_admin/" title="Valine 评论回复增强"><img class="post_bg" src="/hexo/valine_admin/valine_admin.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Valine 评论回复增强"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo/valine_admin/" title="Valine 评论回复增强">Valine 评论回复增强</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-19T05:25:01.000Z" title="发表于 2020-04-19 13:25:01">2020-04-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span></div><div class="content">由于 Valine 本身的评论回复并不是很好用, 而且现在的版本甚至已经取消了评论回复的功能, 因此我们需要 Valine-Admin 来增强.
+部署首先我推荐使用国际版的 LeanCloud 而不是华东华北节点 (不用身份证绑定域名也不用备案啥的) , 将数据迁移到国际版可以用 LeanCloud 的数据导入导出功能实现, 不过要注意导出功能只能在中午 12 点前使用.
+进入你原本的 Valine 评论的 LeanCloud 应用, 选择 云引擎 -&gt; 部署 -&gt; 部署项目 -&gt; Git 源码部署 -&gt; 配置 Git 中填入 https://github.com/DesertsP/Valine-Admin.git , 然后保存.
+
+分支或提交 填入 master  , 然后点击部署
+
+第一次部署需要一点点时间.
+配置接下来就是配置了. 进入 云引擎 -&gt; 设置 界面配置环境变量.
+
+
+
+
+
+变量
+值
+说明
+
+
+
+
+SITE_NAME
+
+网站名称
+
+
+SITE_URL
+
+网站地址
+
+
+SMTP_USER
+
+SMTP 用户名 (一般为你的邮箱)
+
+
+SMTP ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/hexo/local_search_speed_up/" title="解决 Hexo 本地搜索 search.xml 文件加载过慢"><img class="post_bg" src="/hexo/local_search_speed_up/local_search_speed_up.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决 Hexo 本地搜索 search.xml 文件加载过慢"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo/local_search_speed_up/" title="解决 Hexo 本地搜索 search.xml 文件加载过慢">解决 Hexo 本地搜索 search.xml 文件加载过慢</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-17T02:23:54.000Z" title="发表于 2020-04-17 10:23:54">2020-04-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span></div><div class="content">问题由于不想使用第三方, 我使用了本地搜索. 但是本地搜索带来的一个问题是, search.xml 太大了, 加载速度缓慢. 如果我们将 search.xml 文件使用外链引用 (例如用 Jsdelivr 加速过的链接) , 就可以解决这个问题.
+解决打开主题下的 local-search.js 文件 (不同主题的位置会不同, 但是一般都在 source/js 这种文件夹里) , 找到如下字段
+1url: GLOBAL_CONFIG.root + path
+改成
+1url: 外链
+外链推荐使用 Jsdelivr 的 cdn (引用 Github 的资源, 不需要手动更新, 速度也挺快) . 如果你的博客部署在 Github Pages, 那么就可以改成如下形式
+1
+如果你还不知道什么是 Jsdelivr , 可以看我的这篇文章. 
+换了外链后, 速度明显增加, 几乎是秒加载.
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/hexo/butterfly_modify/" title="Butterfly 主题魔改记录"><img class="post_bg" src="/hexo/butterfly_modify/butterfly_modify.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Butterfly 主题魔改记录"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo/butterfly_modify/" title="Butterfly 主题魔改记录">Butterfly 主题魔改记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-13T03:26:37.000Z" title="发表于 2020-04-13 11:26:37">2020-04-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span></div><div class="content">记录下我对 Butterfly 主题的魔改, 一方面可供参考, 另一方面可以记录下自己的修改方便查找.
+本博客已开源! 请看 Hexo modify theme butterfly. 以下魔改部分集合到魔改主题, 部分已放弃 (不兼容或者其他原因). 如果更改失效, 可能是版本问题, 如果想要尽快使用这些魔改, 最便捷的方式是直接使用我的魔改主题. 魔改主题保留了所有原配置, 所有魔改配置均可关闭.
+Mathjax 公式渲染去除滚动条进入 source/css/_layout/third-party.styl , 找到如下内容
+12.has-jax  overflow: auto
+改成
+12.has-jax  overflow: visible
+设置半透明效果看我博客. 
+进入source/css/_layout/page.styl 文件, 找到以下内容
+123456.layout_page  display: flex  align-items: flex-start  margin: 0 auto  padding: 2rem 15px  max-width: 1200px
+ 后面 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/math/probability_theory/beta/" title="Beta 函数, Beta 分布详解"><img class="post_bg" src="/math/probability_theory/beta/beta.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Beta 函数, Beta 分布详解"></a></div><div class="recent-post-info"><a class="article-title" href="/math/probability_theory/beta/" title="Beta 函数, Beta 分布详解">Beta 函数, Beta 分布详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-04-13T02:02:05.000Z" title="发表于 2020-04-13 10:02:05">2020-04-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a></span></div><div class="content">推导第一种&nbsp;$\mathrm{Beta}$ 分布一般被用于建模伯努利试验事件成功的概率的概率分布. 什么叫做伯努利试验事件成功的概率? 我们来举个例子.
+
+如果有一枚硬币, 分为正反两面 (不一定均匀) , 那么假设你抛了 $10$ 次, 正面有 $7$ 次, 那么抛这枚硬币是正面的概率是多少呢? 当然我们一般会说是 $7/10$ , 但这只是最好的估计. 可能是 $1/10$ 吗? 当然可能, 但是可能性不高. 这里的 $7/10$ , $1/10$ 就是所谓伯努利试验事件成功的概率. 而其服从的分布就是伯努利试验事件成功的概率的概率分布.
+
+二项分布相信大家高中就都已经接触过了
+
+P(x) = \binom{n}{x}q^x(1-q)^{n-x}这是已知参数 $n, q$ 来估计 $x$ , 我们同样可以将其等价地写为 $P(x\mid  q)$ . 那如果我们知道了 $n,x$ , 要如何估计 $q$ 呢? 也就是如何求出 $P(q\mid x)$ (省略了 $n$ 是为了方便写公式, 毕竟两个条件概率都是已知 $n$ 的) .
+根据贝叶斯公式, 我们有
+
+P(q\mi ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/6/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/#content-inner">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/#content-inner">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/#content-inner">10</a><a class="extend next" rel="next" href="/page/8/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">云玩家</div><div class="author-info__description">云玩家's blog</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">27</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/math/set_theory/delta_system_lemma/" title="Δ系统 (Δ-system) 引理"><img src="/math/set_theory/delta_system_lemma/delta_system_lemma.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Δ系统 (Δ-system) 引理"/></a><div class="content"><a class="title" href="/math/set_theory/delta_system_lemma/" title="Δ系统 (Δ-system) 引理">Δ系统 (Δ-system) 引理</a><time datetime="2022-04-20T05:27:54.000Z" title="发表于 2022-04-20 13:27:54">2022-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/set_theory/cardinality_multiplication/" title="基数乘法的不变性"><img src="/math/set_theory/cardinality_multiplication/cardinality_multiplication.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基数乘法的不变性"/></a><div class="content"><a class="title" href="/math/set_theory/cardinality_multiplication/" title="基数乘法的不变性">基数乘法的不变性</a><time datetime="2022-02-22T11:15:08.000Z" title="发表于 2022-02-22 19:15:08">2022-02-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/set_theory/unique_ordinal/" title="序数的唯一性"><img src="/math/set_theory/unique_ordinal/unique_ordinal.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="序数的唯一性"/></a><div class="content"><a class="title" href="/math/set_theory/unique_ordinal/" title="序数的唯一性">序数的唯一性</a><time datetime="2022-01-12T08:26:12.000Z" title="发表于 2022-01-12 16:26:12">2022-01-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/mathematical_analysis/mathematical_analysis_practice/3/3-1/" title="(史济怀) 数学分析教程上册第 3 版-练习题 3.1"><img src="/math/mathematical_analysis/mathematical_analysis_practice/3/3-1/math.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(史济怀) 数学分析教程上册第 3 版-练习题 3.1"/></a><div class="content"><a class="title" href="/math/mathematical_analysis/mathematical_analysis_practice/3/3-1/" title="(史济怀) 数学分析教程上册第 3 版-练习题 3.1">(史济怀) 数学分析教程上册第 3 版-练习题 3.1</a><time datetime="2021-10-19T00:30:55.000Z" title="发表于 2021-10-19 08:30:55">2021-10-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/mathematical_analysis/mathematical_analysis_practice/2/2-11/" title="(史济怀) 数学分析教程上册第 3 版-练习题 2.11"><img src="/math/mathematical_analysis/mathematical_analysis_practice/2/2-11/2-11.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(史济怀) 数学分析教程上册第 3 版-练习题 2.11"/></a><div class="content"><a class="title" href="/math/mathematical_analysis/mathematical_analysis_practice/2/2-11/" title="(史济怀) 数学分析教程上册第 3 版-练习题 2.11">(史济怀) 数学分析教程上册第 3 版-练习题 2.11</a><time datetime="2021-09-25T03:37:28.000Z" title="发表于 2021-09-25 11:37:28">2021-09-25</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Git/"><span class="card-category-list-name">Git</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">12</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/Jupyter/"><span class="card-category-list-name">Jupyter</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/Numpy/"><span class="card-category-list-name">Numpy</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/%E5%85%B6%E4%BB%96/"><span class="card-category-list-name">其他</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E5%AD%A6/"><span class="card-category-list-name">数学</span><span class="card-category-list-count">37</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E5%AD%A6/%E5%85%B6%E4%BB%96/"><span class="card-category-list-name">其他</span><span class="card-category-list-count">6</span></a></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Blog/" style="font-size: 1.1em; color: #999">Blog</a> <a href="/tags/Git/" style="font-size: 1.13em; color: #999a9c">Git</a> <a href="/tags/Gym/" style="font-size: 1.1em; color: #999">Gym</a> <a href="/tags/Hexo/" style="font-size: 1.27em; color: #99a0a9">Hexo</a> <a href="/tags/Jupyter/" style="font-size: 1.17em; color: #999c9f">Jupyter</a> <a href="/tags/LaTeX/" style="font-size: 1.13em; color: #999a9c">LaTeX</a> <a href="/tags/Numpy/" style="font-size: 1.13em; color: #999a9c">Numpy</a> <a href="/tags/Python/" style="font-size: 1.3em; color: #99a1ac">Python</a> <a href="/tags/Pytorch/" style="font-size: 1.17em; color: #999c9f">Pytorch</a> <a href="/tags/Spinning-Up/" style="font-size: 1.13em; color: #999a9c">Spinning Up</a> <a href="/tags/Valine/" style="font-size: 1.17em; color: #999c9f">Valine</a> <a href="/tags/%E4%B8%8D%E7%AD%89%E5%BC%8F/" style="font-size: 1.1em; color: #999">不等式</a> <a href="/tags/%E4%B9%A0%E9%A2%98/" style="font-size: 1.43em; color: #99a6b9">习题</a> <a href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%9E%E4%BE%8B/" style="font-size: 1.23em; color: #999ea6">代码实例</a> <a href="/tags/%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95/" style="font-size: 1.17em; color: #999c9f">优化算法</a> <a href="/tags/%E5%85%AC%E7%90%86/" style="font-size: 1.1em; color: #999">公理</a> <a href="/tags/%E5%87%BD%E6%95%B0/" style="font-size: 1.13em; color: #999a9c">函数</a> <a href="/tags/%E5%88%86%E5%B8%83/" style="font-size: 1.13em; color: #999a9c">分布</a> <a href="/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/" style="font-size: 1.1em; color: #999">博弈论</a> <a href="/tags/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/" style="font-size: 1.1em; color: #999">圆锥曲线</a> <a href="/tags/%E5%A4%8D%E6%95%B0/" style="font-size: 1.1em; color: #999">复数</a> <a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" style="font-size: 1.37em; color: #99a4b2">强化学习</a> <a href="/tags/%E6%90%AD%E5%BB%BA%E7%AB%99%E7%82%B9/" style="font-size: 1.27em; color: #99a0a9">搭建站点</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.23em; color: #999ea6">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1.5em; color: #99a9bf">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" style="font-size: 1.4em; color: #99a5b6">数学分析</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.47em; color: #99a8bc">机器学习</a> <a href="/tags/%E6%9E%81%E9%99%90/" style="font-size: 1.1em; color: #999">极限</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.1em; color: #999">框架</a> <a href="/tags/%E6%A6%82%E7%8E%87%E5%9B%BE%E6%A8%A1%E5%9E%8B/" style="font-size: 1.13em; color: #999a9c">概率图模型</a> <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" style="font-size: 1.17em; color: #999c9f">概率论</a> <a href="/tags/%E6%B0%B4%E6%96%87/" style="font-size: 1.13em; color: #999a9c">水文</a> <a href="/tags/%E7%99%BD%E5%AB%96/" style="font-size: 1.13em; color: #999a9c">白嫖</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1.13em; color: #999a9c">线性代数</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 1.1em; color: #999">英语</a> <a href="/tags/%E8%A5%BF%E7%93%9C%E4%B9%A6/" style="font-size: 1.33em; color: #99a2af">西瓜书</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 1.1em; color: #999">论文</a> <a href="/tags/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/" style="font-size: 1.13em; color: #999a9c">论文精读</a> <a href="/tags/%E9%97%AE%E9%A2%98/" style="font-size: 1.2em; color: #999da3">问题</a> <a href="/tags/%E9%9B%86%E5%90%88%E8%AE%BA/" style="font-size: 1.17em; color: #999c9f">集合论</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">一月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">10</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">99</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-12-25T12:14:01.300Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 云玩家</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>基数乘法的不变性 | 云玩家</title><meta name="author" content="云玩家"><meta name="copyright" content="云玩家"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="主要内容  本文主要证明了当基数 $\kappa\geqslant\omega$ , 那么有 $\kappa \oplus \kappa&#x3D;\kappa, \kappa \otimes \kappa&#x3D;\kappa$​ .   简单介绍这是一个重要的集合论定理, 无论是基数的幂 ($\alpha^\alpha$) 还是不可数集的不可数交, 都可以用这个定理导出. 定义基数乘法和加法:   $\kapp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基数乘法的不变性">
+<meta property="og:url" content="http://yunist.cn/math/set_theory/cardinality_multiplication/index.html">
+<meta property="og:site_name" content="云玩家">
+<meta property="og:description" content="主要内容  本文主要证明了当基数 $\kappa\geqslant\omega$ , 那么有 $\kappa \oplus \kappa&#x3D;\kappa, \kappa \otimes \kappa&#x3D;\kappa$​ .   简单介绍这是一个重要的集合论定理, 无论是基数的幂 ($\alpha^\alpha$) 还是不可数集的不可数交, 都可以用这个定理导出. 定义基数乘法和加法:   $\kapp">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yunist.cn/math/set_theory/cardinality_multiplication/cardinality_multiplication.png">
+<meta property="article:published_time" content="2022-02-22T11:15:08.000Z">
+<meta property="article:modified_time" content="2022-05-03T15:03:31.945Z">
+<meta property="article:author" content="云玩家">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="集合论">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yunist.cn/math/set_theory/cardinality_multiplication/cardinality_multiplication.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yunist.cn/math/set_theory/cardinality_multiplication/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '基数乘法的不变性',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-03 23:03:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">27</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/math/set_theory/cardinality_multiplication/cardinality_multiplication.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">云玩家</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">基数乘法的不变性</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-02-22T11:15:08.000Z" title="发表于 2022-02-22 19:15:08">2022-02-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-03T15:03:31.945Z" title="更新于 2022-05-03 23:03:31">2022-05-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6/%E9%9B%86%E5%90%88%E8%AE%BA/">集合论</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="基数乘法的不变性"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h1>
+
+本文主要证明了当基数 $\kappa\geqslant\omega$ , 那么有 $\kappa \oplus \kappa=\kappa, \kappa \otimes \kappa=\kappa$​ .
+
+
+<h1 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h1><p>这是一个重要的集合论定理, 无论是基数的幂 ($\alpha^\alpha$) 还是不可数集的不可数交, 都可以用这个定理导出.</p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>基数乘法和加法:</p>
+
+
+$\kappa\oplus\gamma=|\kappa\times\{0\}\cup\gamma\times\{1\}|$ ,
+
+$\kappa\otimes\gamma=|\kappa\times\gamma|$​
+
+
+<h1 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h1>
+
+我们可以先证明基数加法, 即 $\kappa\geqslant\omega$,  $\kappa\oplus\kappa=\kappa$ . 我们将使用超限归纳法. 命题等价于对于任意序数 $\alpha$ 都有 $|\alpha|\oplus|\alpha|=|\alpha|$ 对于某个序数 $\alpha\geqslant\omega$ , 若任意 $\beta<\alpha$ 都有 $|\beta|\oplus|\beta|=|\beta|$ , 那么分两种情况讨论. 假设 $\alpha$ 不是基数, 那么由于 $|\alpha|<\alpha$, 显然有 $|\alpha|\oplus|\alpha|=|\alpha|$ . 如果 $\alpha$ 是基数, 那么 $\alpha$ 一定是极限序数, 那么有 $\alpha=\sup\{\beta\mid \beta<\alpha\}$ , 根据基数加法的定义, 还有
+$$
+|\alpha|\oplus|\alpha|=\alpha\oplus\alpha=\left|\sup\{\beta\times\{0\}\cup\beta\times\{1\}\mid\beta<\alpha\}\right|
+$$
+而我们又得知对任意 $\beta<\alpha$, 都有 $\beta\times\{0\}\cup\beta\times\{1\}<\alpha$ (根据基数加法的定义), 这意味着 $\sup\{\beta\times\{0\}\cup\beta\times\{1\}\mid\beta<\alpha\}\leqslant\alpha$ , 即 $\left|\sup\{\beta\times\{0\}\cup\beta\times\{1\}\mid\beta<\alpha\}\right|\leqslant\alpha$ 但是又有 $\alpha\oplus\alpha\geqslant\alpha$ , 根据势的三歧性, 则有 $\alpha\oplus\alpha=\alpha$ , 即 $|\alpha|\oplus|\alpha|=|\alpha|$ . 根据超限归纳法知命题成立.$\quad\blacksquare$​
+
+
+<p>而乘法的证明是类似的, 利用超限归纳法, 下面只证明当 $\alpha$ 是基数的情况. 根据定义, 有</p>
+<script type="math/tex; mode=display">
+|\alpha|\otimes|\alpha|=\alpha\otimes\alpha=\left|\sup\{\beta\times\beta\mid\beta<\alpha\}\right|</script><p>那么就有</p>
+
+$$
+|\alpha|\otimes|\alpha|=\left|\sup\{\beta\times\beta\mid\beta<\alpha\}\right|\leqslant\sup\{\beta\times\beta\mid\beta<\alpha\}\leqslant\alpha=|\alpha|
+$$
+$\blacksquare$​
+
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://yunist.cn">云玩家</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yunist.cn/math/set_theory/cardinality_multiplication/">http://yunist.cn/math/set_theory/cardinality_multiplication/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yunist.cn" target="_blank">云玩家</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E5%AD%A6/">数学</a><a class="post-meta__tags" href="/tags/%E9%9B%86%E5%90%88%E8%AE%BA/">集合论</a></div><div class="post_share"><div class="social-share" data-image="/math/set_theory/cardinality_multiplication/cardinality_multiplication.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/math/set_theory/delta_system_lemma/"><img class="prev-cover" src="/math/set_theory/delta_system_lemma/delta_system_lemma.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Δ系统 (Δ-system) 引理</div></div></a></div><div class="next-post pull-right"><a href="/math/set_theory/unique_ordinal/"><img class="next-cover" src="/math/set_theory/unique_ordinal/unique_ordinal.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">序数的唯一性</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/math/set_theory/unique_ordinal/" title="序数的唯一性"><img class="cover" src="/math/set_theory/unique_ordinal/unique_ordinal.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-12</div><div class="title">序数的唯一性</div></div></a></div><div><a href="/math/set_theory/delta_system_lemma/" title="Δ系统 (Δ-system) 引理"><img class="cover" src="/math/set_theory/delta_system_lemma/delta_system_lemma.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">Δ系统 (Δ-system) 引理</div></div></a></div><div><a href="/scribble/obsessive_LaTeX/" title="强迫症的 LaTeX"><img class="cover" src="/scribble/obsessive_LaTeX/obsessive_LaTeX.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-23</div><div class="title">强迫症的 LaTeX</div></div></a></div><div><a href="/ML/model/LDA/" title="LDA 详解"><img class="cover" src="/ML/model/LDA/LDA.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-23</div><div class="title">LDA 详解</div></div></a></div><div><a href="/math/linear_algebra/geometric_det/" title="行列式几何意义的证明"><img class="cover" src="/math/linear_algebra/geometric_det/geometric_det.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-30</div><div class="title">行列式几何意义的证明</div></div></a></div><div><a href="/math/linear_algebra/prove_1/" title="线性代数命题证明 (一)"><img class="cover" src="/math/linear_algebra/prove_1/prove_1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-06-05</div><div class="title">线性代数命题证明 (一)</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">云玩家</div><div class="author-info__description">云玩家's blog</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">99</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">27</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9"><span class="toc-number">1.</span> <span class="toc-text">主要内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">简单介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">3.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%81%E6%98%8E"><span class="toc-number">4.</span> <span class="toc-text">证明</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/math/set_theory/delta_system_lemma/" title="Δ系统 (Δ-system) 引理"><img src="/math/set_theory/delta_system_lemma/delta_system_lemma.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Δ系统 (Δ-system) 引理"/></a><div class="content"><a class="title" href="/math/set_theory/delta_system_lemma/" title="Δ系统 (Δ-system) 引理">Δ系统 (Δ-system) 引理</a><time datetime="2022-04-20T05:27:54.000Z" title="发表于 2022-04-20 13:27:54">2022-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/set_theory/cardinality_multiplication/" title="基数乘法的不变性"><img src="/math/set_theory/cardinality_multiplication/cardinality_multiplication.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基数乘法的不变性"/></a><div class="content"><a class="title" href="/math/set_theory/cardinality_multiplication/" title="基数乘法的不变性">基数乘法的不变性</a><time datetime="2022-02-22T11:15:08.000Z" title="发表于 2022-02-22 19:15:08">2022-02-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/set_theory/unique_ordinal/" title="序数的唯一性"><img src="/math/set_theory/unique_ordinal/unique_ordinal.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="序数的唯一性"/></a><div class="content"><a class="title" href="/math/set_theory/unique_ordinal/" title="序数的唯一性">序数的唯一性</a><time datetime="2022-01-12T08:26:12.000Z" title="发表于 2022-01-12 16:26:12">2022-01-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/mathematical_analysis/mathematical_analysis_practice/3/3-1/" title="(史济怀) 数学分析教程上册第 3 版-练习题 3.1"><img src="/math/mathematical_analysis/mathematical_analysis_practice/3/3-1/math.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(史济怀) 数学分析教程上册第 3 版-练习题 3.1"/></a><div class="content"><a class="title" href="/math/mathematical_analysis/mathematical_analysis_practice/3/3-1/" title="(史济怀) 数学分析教程上册第 3 版-练习题 3.1">(史济怀) 数学分析教程上册第 3 版-练习题 3.1</a><time datetime="2021-10-19T00:30:55.000Z" title="发表于 2021-10-19 08:30:55">2021-10-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/math/mathematical_analysis/mathematical_analysis_practice/2/2-11/" title="(史济怀) 数学分析教程上册第 3 版-练习题 2.11"><img src="/math/mathematical_analysis/mathematical_analysis_practice/2/2-11/2-11.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(史济怀) 数学分析教程上册第 3 版-练习题 2.11"/></a><div class="content"><a class="title" href="/math/mathematical_analysis/mathematical_analysis_practice/2/2-11/" title="(史济怀) 数学分析教程上册第 3 版-练习题 2.11">(史济怀) 数学分析教程上册第 3 版-练习题 2.11</a><time datetime="2021-09-25T03:37:28.000Z" title="发表于 2021-09-25 11:37:28">2021-09-25</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 云玩家</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
